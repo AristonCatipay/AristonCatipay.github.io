@@ -14,13 +14,16 @@ body {
   color: #fff;
   position: relative;
   background: transparent;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
+
 
 body::before {
   content: "";
   position: fixed;
   background: #040404 top right no-repeat;
-  /* url("../img/bg4.jpg") top right no-repeat; */
+  /* background: #040404 url("../img/bg4.jpg") top right no-repeat; */
+  /* background-attachment: fixed; This will fix the image in place */
   background-size: cover;
   left: 0;
   right: 0;
