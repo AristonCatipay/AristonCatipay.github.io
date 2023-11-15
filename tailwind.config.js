@@ -4,7 +4,12 @@ module.exports = {
     "./*.{html,js}",
     "./node_modules/flowbite/**/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin')
